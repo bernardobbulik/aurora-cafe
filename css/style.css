@@ -1,0 +1,127 @@
+:root {
+  --color-bg: #f8f5f0;
+  --color-surface: #e9dfc9;
+  --color-primary: #5b3a29;
+  --color-secondary: #6f7d4e;
+  --color-accent: #b9814a;
+  --color-text: #2f241f;
+  --color-text-muted: #6a5f58;
+  --color-border: #d6c7b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+/*
+========================================
+HEADER | NAV
+========================================
+*/
+
+header {
+  background-color: var(--color-secondary);
+  width: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+header nav ul {
+  width: auto;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+header nav ul li,
+header nav ul li a {
+  color: var(--color-text);
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 120ms ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: all 12 0ms ease;
+}
+
+/*
+========================================
+BRAND | HERO
+========================================
+*/
+section > h1 {
+  margin: 4rem 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--color-text);
+  font-size: 5rem;
+  letter-spacing: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section img {
+  background-color: green;
+  width: 90%;
+}
+
+section p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  width: 100ch;
+  text-align: justify;
+  line-height: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+article {
+  margin-top: 1rem;
+  height: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+article span {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 20px;
+}
+
+article span > a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
